@@ -1,8 +1,14 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Existing Product Handling: 
+If a user adds the same product again, it updates the quantity instead of adding a duplicate entry.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## New Product Handling: 
+If the product is not already in the cart, it gets added as a new entry.
+
+## Efficient Quantity Update: 
+The quantity is stored and updated properly in the state.
+
+## Bug Fix: 
+Previously, the entire users array was being used incorrectly in addToCart. Now, only the selected user is passed.
